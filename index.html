@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<link rel="shortcut icon" href="icon.ico">
+<link rel="shortcut icon" href="icon2.ico">
 <title>DEVLINBOT</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,12 +31,18 @@ body, html {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("icon2.png");
+    background-image: url("icon3.png");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
+    background-image: url("http://download.goldenpeak.edu.np/logo/code.jpg");
+    min-height: 400px;
+}
+
+/* Fourth image (Contact) */
+.bgimg-4 {
     background-image: url("bg3.png");
     min-height: 400px;
 }
@@ -78,9 +84,10 @@ body, html {
 
 <nav class="w3-sidebar w3-bar-block w3-discord w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
   <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-green w3-hover-red w3-center w3-padding-29">CLOSE</a> 
-  <a href="#content1" onclick="w3_close()" class="w3-bar-item w3-button w3-discord w3-hover-black w3-center w3-padding-16 smoothScroll">WHAT I DO</a> 
+  <a href="#content1" onclick="w3_close()" class="w3-bar-item w3-button w3-discord w3-hover-black w3-center w3-padding-16 smoothScroll">INVITE</a> 
   <a href="#content2" onclick="w3_close()" class="w3-bar-item w3-button w3-discord w3-hover-black w3-center w3-padding-16 smoothScroll">DOCUMENTATION</a> 
-  <a href="#content3" onclick="w3_close()" class="w3-bar-item w3-button w3-discord w3-hover-black w3-center w3-padding-16 smoothScroll">CONTACT</a>
+  <a href="#content3" onclick="w3_close()" class="w3-bar-item w3-button w3-discord w3-hover-black w3-center w3-padding-16 smoothScroll">COMMANDS</a>
+  <a href="#content4" onclick="w3_close()" class="w3-bar-item w3-button w3-discord w3-hover-black w3-center w3-padding-16 smoothScroll">CONTACT</a>
 </nav>
 
 
@@ -99,7 +106,7 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-medium w3-hide-small">WELCOME TO SIMPLE MODDERATION, </span>DEVLINBOT</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-medium w3-hide-small w3-hide-mobile">WELCOME TO SIMPLE MODDERATION, </span>DEVLINBOT</span>
   </div>
 </div>
 
@@ -150,7 +157,7 @@ body, html {
 
 
   </div></div>
-<center><a href="https://discordapp.com/oauth2/authorize?client_id=424970284756500481&scope=bot&permissions=506584135" class="w3-button w3-round w3-indigo w3-large w3-hover-green w3-hover-shadow"><img src="icon2.png" class="w3-circle" width="2%"><span class="w3-padding">Invite DevlinBot!</span></a></center><br>
+<center><a href="https://discordapp.com/oauth2/authorize?client_id=424970284756500481&scope=bot&permissions=506584135" class="w3-button w3-round w3-indigo w3-large w3-hover-green w3-hover-shadow"><img src="icon3.png" class="w3-circle" width="2%"><span class="w3-padding">Invite DevlinBot!</span></a></center><br>
 <center><a href="https://dlnbots.github.io/blog/" class="w3-button w3-round w3-teal w3-large w3-hover-green w3-hover-shadow"><span class="w3-padding">Go to our Blog</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://discord.gg/gvEa5jr" target="_blank" class="w3-button w3-round w3-discord w3-large w3-hover-green w3-hover-shadow"><span class="w3-padding">[Support] Join Devlin Discord</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://discord.gg/KM6Tmv3" target="_blank" class="w3-button w3-round w3-discord w3-large w3-hover-green w3-hover-shadow"><span class="w3-padding">Join DSB Hub</span></a></center><br><br>
@@ -202,7 +209,46 @@ body, html {
   </div>
 </div>
 
-
+<div class="bgimg-3 w3-display-container w3-opacity-min" style="z-index:-2;">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">COMMANDS</span>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-128" id="content3">
+<h3 class="w3-center"><b>DevlinBot accepts</b> the following commands</h3>
+<p class="w3-center"><em>Remember to use the Command Prefix!</em></p>
+<p><ul><h4><b>Info:</b></h4><ul>
+<li><b>help</b> Displays the general info message</li>
+<li><b>cmds</b> Displays the Command help message</li>
+<li><b>info</b> Displays information about the bot</li>
+<li><b>invite</b> Displays my invite link and Discord Support Server</li></ul>
+<h4><b>Music:</b></h4><ul>
+<li><b>join</b> Makes the bot join your Voice channel</li>
+<li><b>leave</b> Makes the bot leave your Voice channel (Temp Disabled)</li>
+<li><b>play <i>search term</i></b> Searches YouTube and then plays it</li></ul>
+<h4><b>Fun:</b></h4><ul>
+<li><b>kill <i>@user</i></b> Shoots the mentioned user!</li></ul>
+<h4><b>Misc:</b></h4><ul>
+<li><b>say <i>message</i></b> Sends out a copy of your message (Needs User Perms)</li>
+<li><b>tts <i>message</i></b> Sends out a tts copy of your message (Needs User Perms)</li>
+<li><b>embed <i>message</i></b> SSends out an embedded copy of your message</li>
+<li><b>nick <i>name</i></b> Allows you to change your nickname</li>
+<li><b>unnick</b> Allows you to remove your nickname</li>
+<li><b>afk <i>reason</i></b> Allows you to toggle your AFK status (Reason Optional)</li>
+<li><b>update.afk <i>reason</i></b> Allows you to set your AFK message</li></ul>
+</ul></ul><h3 class="w3-center"><h3 class="w3-center">Moderator Only:</h3><ul>
+<h4><b>Moderation:</b></h4><ul>
+<li><b>mute <i>@user</i></b> Mutes the user mentioned in your server (Temp Disabled)</li>
+<li><b>kick <i>@user</i></b> Kicks the user mentioned from your server</li>
+<li><b>ban <i>@user</i></b> Bans the user mentioned from your server</li></ul>
+<h4><b>Cleanup:</b></h4><ul>
+<li><b>clean <i>number</i></b> Purges the amount of messages specified</li>
+<li><b>s.clean <i>number</i></b> <i>Silent</i> Purge the amount of messages specified</li></ul>
+<h4><b>Setup:</b></h4><ul>
+<li><b>[WIP] setchannel <i>#channel</i></b> Sets your servers channel for various messaging events from the bot</li>
+<li><b>enable.<i>module_name</i></b> Enables the module mentioned (Currently only nick + music)</li>
+<li><b>disable.<i>module_name</i></b> Disables the module mentioned</li></ul>
+</ul></ul></p></div>
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
@@ -213,14 +259,14 @@ body, html {
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min w3-discord" style="z-index:-2;">
+<div class="bgimg-4 w3-display-container w3-opacity-min w3-discord" style="z-index:-2;">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT US</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-128" id="content3">
+<div class="w3-content w3-container w3-padding-128" id="content4">
   <h3 class="w3-center">Need a chat?</h3><br>
 <center><a href="https://www.discord.gg/gvEa5jr" target="_blank">Join Official Devlin Discord Server</a><br>
 <a href="https://www.discord.gg/MjGE2Wk" target="_blank">Join Devlin Bots Discord Server</a><br>
